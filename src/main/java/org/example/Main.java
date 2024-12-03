@@ -3,6 +3,12 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+    static int[] totalProfit;
+    
+
+    static void print(){
+
+    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -25,6 +31,7 @@ public class Main {
             material[i] = in.nextInt();
             System.out.printf("Masukkan keuntungan per unit produk %d (Rp):", i + 1);
             profit[i] = in.nextInt();
+            System.out.println();
         }
 
     }
