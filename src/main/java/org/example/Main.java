@@ -1,7 +1,49 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Masukkan jumlah produk:");
+        int productAmount = in.nextInt();
+        int[] timeHour = new int[productAmount];
+        int[] material = new int[productAmount];
+        int[] profit = new int[productAmount];
+
+        System.out.println("masukkan kapasitas waktu kerja mesin(jam):");
+        int engineHourCapacity = in.nextInt();
+        System.out.println("masukkan kapasitas bahan baku(unit):");
+        int materialCapacity = in.nextInt();
+
+
+            for (int i = 0; i < productAmount; i++) {
+                System.out.printf("Masukkan waktu kerja untuk produk %d:", i+1 );
+                timeHour[i] = in.nextInt();
+                System.out.printf("Masukkan bahan baku untuk produk %d:", i+1 );
+                material[i] = in.nextInt();
+                System.out.printf("Masukkan keuntungan per unit produk %d:", i+1 );
+                profit[i] = in.nextInt();
+            }
+
+
+
+
+
+
+
+
+        System.out.println();
+        System.out.println("Masukkan waktu kerja maksimal mesin");
+        int engineHour = in.nextInt();
+        System.out.println("Masukkan bahan baku yang dimiliki:");
+        int materialAmount = in.nextInt();
+
+
+
+
+
         System.out.println("Hello, World!");
     }
 }
