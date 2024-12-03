@@ -19,11 +19,11 @@ public class Main {
 
 
         for (int i = 0; i < productAmount; i++) {
-            System.out.printf("Masukkan waktu kerja untuk produk %d:", i + 1);
+            System.out.printf("Masukkan waktu kerja untuk produk %d (jam):", i + 1);
             timeHour[i] = in.nextInt();
-            System.out.printf("Masukkan bahan baku untuk produk %d:", i + 1);
+            System.out.printf("Masukkan bahan baku untuk produk %d (unit):", i + 1);
             material[i] = in.nextInt();
-            System.out.printf("Masukkan keuntungan per unit produk %d:", i + 1);
+            System.out.printf("Masukkan keuntungan per unit produk %d (Rp):", i + 1);
             profit[i] = in.nextInt();
         }
 
