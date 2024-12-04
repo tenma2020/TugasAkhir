@@ -3,12 +3,8 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
-    static int[] totalProfit;
-    
+    Product[] products = new Product[10];
 
-    static void print(){
-
-    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
